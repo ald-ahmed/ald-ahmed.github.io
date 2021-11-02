@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Copy Ticket</title>
+
+    <style>
+        h2 {
+            box-sizing: border-box;
+            margin-top: 50vh;
+            margin-bottom: .5rem;
+            font-family: "Roboto Mono",monospace;
+            color: inherit;
+            text-align: center!important;
+        }
+        a {
+            font-family: Roboto,sans-serif;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            user-select: none;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            background-color: #9797ff;
+            border-color: #9797ff;
+            padding: 1rem 2.5rem;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            border-radius: 2.5rem;
+            display: block!important;
+            width: 200px;
+            margin: 1rem auto 3rem !important;
+            color: #fff!important;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+<p>
+    <a href="javascript:(function()%7Bjavascript%3A%20(()%20%3D%3E%20%7B%20%20const%20issueTitle%20%3D%20%20%20%20document.querySelector(%20%20%20%20%20%20%22%5Bdata-test-id%3D'issue.views.issue-base.foundation.breadcrumbs.breadcrumb-current-issue-container'%5D%22%2C%20%20%20%20).textContent%20%2B%20%20%20%20'%3A%20'%20%2B%20%20%20%20document.querySelector(%22%5Bdata-test-id%3D'issue.views.issue-base.foundation.summary.heading'%5D%22).textContent%3B%20%20document.body.insertAdjacentHTML('beforeend'%2C%20'%3Caudio%20controls%20autoplay%3E%3C%2Faudio%3E')%3B%20%20navigator.clipboard.writeText(issueTitle)%3B%20%20document.querySelector('audio').src%20%3D%20%20%20%20'data%3Aaudio%2Fmpeg%3Bbase64%2C%2F%2FuUZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAALAAAHyAAPDw8PDw8PDw8eHh4eHh4eHh45OTk5OTk5OTlnZ2dnZ2dnZ2eNjY2NjY2NjY2zs7Ozs7Ozs7PCwsLCwsLCwsLS0tLS0tLS0tLh4eHh4eHh4eHw8PDw8PDw8PD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8AAAA8TEFNRTMuOThyBK8AAAAAAAAAADQgJAXAjQABzAAAB8jbBDi%2FAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%2F%2FsUZAAP8AAAaQAAAAgAAA0gAAABAAAB%2FgAAACAAADSAAAAEAYFAwFAoHA4GAAAAAA9CereO6lvfzP5Mp%2BZn4BQKBRuXVKoy4nHHMr1pN1NqKDT8MyUpOUZWTuGeuzm5%2F%2FsUZB4P8AAAf4AAAAgAAA0gAAABAAAB%2FhQAACAAADSCgAAEmZls8fWSQ9Oo8FmzbhxBO8sDgJBvDCnOAJdj7ST3QWI0FNIlBvRiSwjKIIptYhp%2B6tPD9DDix2d0bO5%2F%2F%2FtEZDwAANoI5%2B4IAHAAAA0gwAAAG517S7m8ogAAADSDAAAAsNNKfW3hF4nF5W5cjgR037dx9Jh0WmvtEZfSZ5br34y%2FbLIp7%2BUjs3puUzuOsNfSWsM%2FlkuaxAj8V%2BxubaVI4ZfG%2FWpcPz%2FP%2BfvVPh3faent0b6QNL60poLtyehqe%2F99%2F%2Bd%2F%2Bf8CMspZ%2Bk53eNvDXGQxlxakO1s6WN2NzLX%2F%2F%2FQqZ3MQ%2F%2Ft0ZAGA9Fxe0%2F9tAAoAAA0g4AABDZkTRe2kbWAAADSAAAAEAjCStdZfjDhUs6GCoQOr7BwcBAEIAU1BGAmIEppnqaUDJitNisqlwqK1yHI4PRIaDYG18kipoeqv%2FrDXStw7cZTMKjFB4eazRbILWzLHBRI55NhmNFhXVmlbWmlVXlYOmGsVJQ6Drk2F1SaOJFWjaaUk1rh%2B6yQexZhYVh7mQ5XXj%2F%2F%2F%2Fi75JlhnAgADOLv9tqBJWIQot%2BEGSfhgIWnKjikS3NDIySfPGBSgRe8cbUUXlOjolFkKayKdsw6E2ijXrMsFPVvRLk9j0nMw049dXbSC0RljXykmZMpq4xs5t8j04RiVVzdUkh352jKGDoGeqGCIi4Sq%2F7QDs03%2F%2F%2FtkZAMA8zZK0WsaGqoAAA0gAAABC9jdP6wYbOgAADSAAAAE93AQ59Ao4NnDgqVaCUDzMHTSMnzrE2mS%2BMU85GMuMZlayG3UWCnKhiOZKDZyYrn6E%2BpgxPHjAdj5hIVNgRFaFlqxG55KXdoxn6anwKbnm2KYmM10czqP1QnQ5KE8ZAMS9n9AE0s19tsDNXpEjGpyMQQQt9g5DC06SRgK%2B%2FWYQJTGFp01aeZdaoJZQQq9DVQRdXmaWlEDgdQrDY1cyzz%2FyiBCkPXNsyyivSQObQRLtQBjqXXwzMRLEXqdd9LJjnj6WGIAB1Vpv7ZIFRrD%2F%2FtkZAYA80NOT%2FsmG9gAAA0gAAABCr0XOeewaqAAADSAAAAEAAwHCrUAxbY092RNWWEMOYIinsX%2FiFws84vealMympIuDVinrJneebe%2FXk1di2DnECszZtlx4CXxWGlaGwLM9wVwVTc9VkWEnC%2FekVI5mXnzlJImRZ%2BZqZYJBWKk7MYC0M3%2F29sGVC4gygEYBKBBE%2FMA4WUKkIL4dlm0F3fgqxYseo25a0mFU%2BNrr1SL1Vaokmb2VVX%2BSkzGSl3X4d7Gb%2F%2Fyjfw6q%2F%2FPlLtUKtQ7lYlDWioFOxQW4cAAAITKUsUdxJQPQg1c8yy3g0HX%2F%2FsUZAyH8OMHymgvYRgAAA0gAAABAJgBW8AAACAAADSAAAAEfSWiwAAB%2FxJVTEFNRTMuOTguNFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV%2F%2FsUZBmP8AAAf4AAAAgAAA0gAAABAAAB%2FgAAACAAADSAAAAEVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV%2F%2FsUZDeP8AAAf4AAAAgAAA0gAAABAAAB%2FgAAACAAADSAAAAEVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV%2F%2FsUZFWP8AAAf4AAAAgAAA0gAAABAAABpAAAACAAADSAAAAEVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV%2F%2FsUZHOP8AAAaQAAAAgAAA0gAAABAAABpAAAACAAADSAAAAEVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV'%3B%7D)()%3B%7D)()%3B">Copy Ticket</a>
+</p>
+
+<h2>Press Command+Shift+B to show your bookmarks toolbar. Drag and drop the button to the bar.
+    <br><br>
+    <img src="drag.gif">
+</h2>
+
+</body>
+
+</html>
